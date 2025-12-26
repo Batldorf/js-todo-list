@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container {
+  width: 360px;
+  background: #111;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.todo-input button {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  background: #4ade80;
+  color: #000;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  opacity: 0.8;
+}
+
+
+#task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.task.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.task button {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  font-size: 18px;
+  cursor: pointer;
+}
